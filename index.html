@@ -3,10 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Réfrigérateur Valette</title>
+        <link rel="stylesheet" href="theme/style.css"/>
+        <script src="code/frigo.js"></script>
+        
     </head>
     <body>
-        <h1>Mon frigo</h1>
-        <img id="img_frigo_fermer" src="theme/images/frigo/frigo_fermer.png" alt="frigo frigo_fermer">
-        <script src="frigo.js"></script>
+        <h1>Mini-projet: Le réfrigirateur</h1>
+        <div id="gestion_produits">
+            <h2>Mes produits dans mon frigo: </h2>
+            <input id="affiche_prod" type="button" value="Afficher les produits"/></br>
+            <input id="ecrire_produit" type='text' placeholder="Écrire un produit" required/></br>
+            <input id="ecrire_qte_produit" type='number' placeholder="Quantité" value="1"/></br>
+            <input id="ajouter_prod" type="button" value="Ajouter le produit"/></br>
+            <input id="supprimer_prod" type="button" value="Supprimer complètement le produit "/></br>
+            <input id="rechercher_prod" type="button" value="Rechercher le produit "/></br>
+            <div id="result">
+                
+            </div>
+            <script src="code/gestion_produits.js"></script>
+            
+            <!--<div id="donnees">
+                <a href= "templates/affichage_produits.html" target='_blank'>Ouvrir dans un nouvel onglet</a>
+            </div>-->
+        </div>
+        
+        
     </body>
 </html>

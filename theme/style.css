@@ -1,7 +1,102 @@
+*{
+    font-family: Arial;
+}
+
 body{
-    background-color: black;
+    background-color: rgb(68, 68, 68);
+    background-image: url("images/frigo/frigo_fermer_dessin_cuisine.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+
 }
 
 body h1{
+    color:rgb(6, 102, 38);
     text-align: center;
 }
+
+/** GESTION DES PRODUITS */
+
+div#gestion_produits{
+    color:whitesmoke;
+    font-family: Arial;
+    text-align: right;
+    padding:45px;
+    font-size: 0.8em;
+    
+}
+
+div#gestion_produits table{
+    
+    display: inline-table;
+    text-align: left;
+    padding:30px;
+    margin-top:20px;
+    border-color: lightblue;
+    border-spacing: 5px;
+    
+}
+
+div#gestion_produits div a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+div#gestion_produits input{
+    background-color: azure;
+    cursor: pointer;
+    color:black;    
+    padding: 5px;
+    margin:5px;
+    border-radius: 10px 10px 0 10px;
+}
+div#gestion_produits input:hover{
+    color: azure;
+    background-color: rgb(53, 52, 52);
+    cursor: pointer;
+}
+
+tbody#rows_produits tr td:nth-child(2){
+    font-weight: bold ;
+    text-align: right;
+
+}
+
+tbody#rows_produits input[type='image']{
+    height:24px;
+    width:24px;
+}
+
+tbody#rows_produits input[type='image']:hover{
+    height:24px;
+    width:24px;
+    background-color: brown;
+}
+
+/** Les 3 boutons  **/
+
+div#gestion_produits input.btn_clic{
+    background-color: rgba(6, 122, 168, 0.74);
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    width: 33px;
+    height: 33px;
+    border-radius: 10px 10px 0 10px;
+    letter-spacing: 2px;
+}
+
+div#gestion_produits input.btn_clic:hover{
+    color:rgb(255, 0, 0);
+    background-color: black;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    width: 33px;
+    height: 33px;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
